@@ -1,31 +1,33 @@
 html {
   font-size: 20px;
 }
-
+.bodybg {
+  background-color: #c7bdad;
+}
 /* NAVIGATION */
 
 .background {
   height: 100vh;
-  background-image: url(images/testbg1.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 .navbar-nav.text-center > a {
   color: white;
-  font-family: "Roboto Mono", monospace;
+  font-family: "Acme", sans-serif;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 .navbar.navbar-expand-lg {
-  padding: 2rem 11rem;
+  padding: 0 11rem;
+  position: fixed;
+  width: 100%;
+  background-color: #020c15;
+  z-index: 2;
 }
 .container-fluid {
-  height: 7rem;
+  background-color: #020c15;
 }
 .logo {
-  height: 7.5rem;
-  width: 11rem;
+  height: 5rem;
+  width: 8rem;
 }
 .hamburger {
   cursor: pointer;
@@ -67,22 +69,30 @@ html {
 .hero {
   overflow: hidden;
   height: 100vh;
+  background-image: url(images/testbg1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .texthero {
   color: white;
   font-family: "Lemon", serif;
   font-size: 4vh;
   text-align: center;
-  margin: 3rem 17rem 2.5rem;
   backdrop-filter: blur(5px) saturate(100%);
   border-radius: 2rem;
+  margin-bottom: 2rem;
+  width: 40rem;
 }
 .herobox {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 8rem;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .buttonservices {
   background: #fff;
@@ -130,7 +140,6 @@ html {
 /* BELOW HERO SECTION*/
 
 .belowhero {
-  background-color: #7e776b;
   height: 100vh;
 }
 .belowherobox {
@@ -142,7 +151,7 @@ html {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: #7f603e;
+  background-color: #342d27;
 }
 .belowherotextbox {
   display: flex;
@@ -155,16 +164,19 @@ html {
 .belowherotextbox > h1 {
   text-transform: uppercase;
   padding-bottom: 1rem;
+  font-family: "Abril Fatface", serif;
 }
 .belowherotextbox > p {
   text-align: start;
   padding-bottom: 1rem;
+  font-family: "Cinzel", serif;
 }
 .belowheropicture {
   width: 17rem;
   height: 22rem;
 }
 .animated-button {
+  font-family: "Cinzel", serif;
   position: relative;
   display: inline-block;
   padding: 12px 24px;
@@ -218,12 +230,13 @@ html {
 /* SERVICES SECTION */
 
 .services {
-  background-color: #7e776b;
+  height: 100vh;
 }
 .services > h1 {
   text-align: center;
   padding-bottom: 3rem;
   color: white;
+  font-family: "Rowdies", sans-serif;
 }
 .imageservices {
   width: 12rem;
@@ -239,75 +252,175 @@ html {
 }
 .servicesboxone {
   display: flex;
-  background-color: #202122;
+  background-color: #031829;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
+  align-items: start;
   width: 12rem;
 }
-.servicesboxone > h5 {
+.servicesboxone > h4 {
   color: white;
-  padding: 1rem 1rem;
+  padding: 1rem 1rem 0;
+  font-family: "Amatic SC", sans-serif;
+  font-size: 3.5vh;
 }
 .servicesonetext {
   color: white;
-  padding: 0 1rem 1rem;
+  padding: 1rem 1rem 1rem;
+  font-family: "Philosopher", sans-serif;
 }
 
 /* SERVICES SECTION */
 
 /* 3D SECTION */
 .section3d {
-  padding-top: 20rem;
-  padding-bottom: 20rem;
-  background-color: #7e776b;
+  margin-top: 10rem;
+  margin-bottom: 15rem;
 }
 .lottieplayer {
-  grid-area: logo;
-  justify-self: center;
+  margin-left: auto;
+  margin-right: auto;
   position: relative;
-  left: 30px;
+  left: 5rem;
 }
-.verticalpicture {
-  display: grid;
-  grid-template-areas:
-    "header header header"
-    "logo logo logo"
-    "text linie imagine";
+.section3dbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10rem;
 }
-.verticalpicture > img {
+.section3dbox > img {
   width: 17rem;
   height: 17rem;
-  grid-area: imagine;
-  justify-self: center;
-}
-.verticalpicture > h3 {
-  justify-self: center;
-  grid-area: header;
-}
-.h4 {
-  grid-area: text;
-  justify-self: center;
+  box-shadow: #202122 10px 10px 30px;
 }
 .vertical {
-  border-right: 2px solid black;
-  height: auto;
-  grid-area: linie;
-  justify-self: center;
+  border-right: 2px solid #041f35;
+  height: 17rem;
+}
+.textbox3d {
+  color: #031829;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: center;
+}
+.textbox3d h4 {
+  font-family: "Concert One", sans-serif;
+  font-size: 5vh;
+}
+.textbox3d p {
+  width: 25rem;
+  text-align: end;
+  font-family: "Mate SC", serif;
+}
+.btn {
+  width: 140px;
+  height: 50px;
+  background: linear-gradient(180deg, #031829 0%, #292e34 99.99%, #ecf1f6 100%);
+  color: #fff;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  cursor: pointer;
   position: relative;
+  box-shadow: 0 15px 15px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
 }
-.text3d {
-  width: 20rem;
-  grid-area: text;
-  justify-self: center;
-  align-self: center;
+
+.btn span {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: top 0.5s;
+  color: white;
 }
+
+.btn-text-one {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  font-family: "Mate SC", serif;
+}
+
+.btn-text-two {
+  position: absolute;
+  width: 100%;
+  top: 150%;
+  left: 0;
+  transform: translateY(-50%);
+  font-family: "Mate SC", serif;
+}
+
+.btn:hover .btn-text-one {
+  top: -100%;
+}
+
+.btn:hover .btn-text-two {
+  top: 50%;
+}
+
 /* 3D SECTION */
 
 /* TESTIMONIALS SECTION */
-
+.testimonials {
+  height: 80vh;
+}
+.svgtestimonialone {
+  width: 6rem;
+  height: 6rem;
+  padding-bottom: 2rem;
+}
+.testimonialclient {
+  padding: 0 12rem;
+  width: auto;
+  padding-bottom: 1.5rem;
+  color: #031829;
+  font-family: "Courgette", cursive;
+}
+.numeclient {
+  color: #031829;
+  font-family: "Kaushan Script", cursive;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  margin-top: 6rem;
+  height: 4rem;
+}
 /* TESTIMONIALS SECTION */
 
 /* CONTACT SECTION */
-
+.contact {
+  background-color: #020c15;
+  color: white;
+}
+.logocontact {
+  height: 11rem;
+  width: 16rem;
+  margin-right: 4rem;
+}
+.contactbox {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: start;
+  gap: 3rem;
+  padding: 3rem 2rem 2rem;
+}
+.boxlinks,
+.boxcontact {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  line-height: 2.1rem;
+}
+#map {
+  height: 10.5rem;
+  width: 1000%;
+  margin-left: 2rem;
+}
 /* CONTACT SECTION */
