@@ -1,0 +1,20 @@
+figure img {
+  width: 12rem;
+  height: 15rem;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  height: 100vh;
+}
+.container a {
+  text-decoration: none;
+  color: #031829;
+}
+.container a:hover {
+  transform: scale(0.8) rotate(-15deg);
+  transition: transform 0.5s ease-in-out;
+}

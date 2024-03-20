@@ -1,8 +1,8 @@
 html {
   font-size: 20px;
 }
-.bodybg {
-  background-color: #c7bdad;
+body {
+  overflow-x: hidden;
 }
 /* NAVIGATION */
 
@@ -141,6 +141,7 @@ html {
 
 .belowhero {
   height: 100vh;
+  background-color: #fff;
 }
 .belowherobox {
   display: inline-flex;
@@ -152,6 +153,7 @@ html {
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: #342d27;
+  border-radius: 1rem;
 }
 .belowherotextbox {
   display: flex;
@@ -174,6 +176,8 @@ html {
 .belowheropicture {
   width: 17rem;
   height: 22rem;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
 }
 .animated-button {
   font-family: "Cinzel", serif;
@@ -230,39 +234,65 @@ html {
 /* SERVICES SECTION */
 
 .services {
+  background-color: #fff;
+  position: relative;
   height: 100vh;
 }
-.services > h1 {
-  text-align: center;
-  padding-bottom: 3rem;
-  color: white;
-  font-family: "Rowdies", sans-serif;
+.services video {
+  width: 100%;
+  height: 70vh;
+  object-fit: cover;
+  position: absolute;
 }
-.imageservices {
-  width: 12rem;
-  height: 14rem;
+
+.services > h6,
+.services > h3 {
+  font-family: "Rowdies", sans-serif;
+  position: absolute;
+  color: #fff;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+.services > h6 {
+  top: 10%;
+}
+.services > h3 {
+  top: 25%;
+}
+.services p {
+  top: 40%;
+  color: #fff;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%);
+  text-align: center;
 }
 .servicesbox {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: baseline;
+  align-items: start;
   gap: 2rem;
-  flex-wrap: wrap;
+  position: absolute;
+  left: 50%;
+  top: 27rem;
+  transform: translate(-50%, 0);
 }
 .servicesboxone {
   display: flex;
   background-color: #031829;
   flex-direction: column;
   justify-content: space-between;
-  align-items: start;
-  width: 12rem;
+  align-items: center;
+  padding: 2rem;
+  border-radius: 0.4rem;
 }
 .servicesboxone > h4 {
   color: white;
-  padding: 1rem 1rem 0;
+  padding: 2rem 1rem 0;
   font-family: "Amatic SC", sans-serif;
-  font-size: 3.5vh;
+  font-size: 1.3rem;
 }
 .servicesonetext {
   color: white;
@@ -274,14 +304,13 @@ html {
 
 /* 3D SECTION */
 .section3d {
-  margin-top: 10rem;
-  margin-bottom: 15rem;
+  padding-bottom: 10rem;
+  background-color: #fff;
 }
 .lottieplayer {
-  margin-left: auto;
-  margin-right: auto;
   position: relative;
-  left: 5rem;
+  left: 50%;
+  transform: translate(-50%);
 }
 .section3dbox {
   display: flex;
@@ -289,11 +318,19 @@ html {
   justify-content: center;
   align-items: center;
   gap: 10rem;
+  background-color: #b4b2b248;
+  width: 80%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 2rem 0;
+  border-radius: 1rem;
 }
 .section3dbox > img {
   width: 17rem;
   height: 17rem;
   box-shadow: #202122 10px 10px 30px;
+  border-radius: 0.5rem;
 }
 .vertical {
   border-right: 2px solid #041f35;
@@ -303,7 +340,7 @@ html {
   color: #031829;
   display: flex;
   flex-direction: column;
-  align-items: end;
+  align-items: start;
   justify-content: center;
 }
 .textbox3d h4 {
@@ -311,8 +348,8 @@ html {
   font-size: 5vh;
 }
 .textbox3d p {
-  width: 25rem;
-  text-align: end;
+  width: 15rem;
+  text-align: start;
   font-family: "Mate SC", serif;
 }
 .btn {
@@ -367,7 +404,8 @@ html {
 
 /* TESTIMONIALS SECTION */
 .testimonials {
-  height: 80vh;
+  background-color: #b4b2b248;
+  padding: 6rem 0;
 }
 .svgtestimonialone {
   width: 6rem;
@@ -408,7 +446,13 @@ html {
   align-items: start;
   justify-content: start;
   gap: 3rem;
-  padding: 3rem 2rem 2rem;
+  padding: 3rem 2rem 0;
+}
+.contactbox h6:hover {
+  color: #d79521;
+  text-decoration: underline;
+  transition: all 0.5s ease-in;
+  cursor: pointer;
 }
 .boxlinks,
 .boxcontact {
@@ -418,9 +462,41 @@ html {
   justify-content: center;
   line-height: 2.1rem;
 }
+.boxlinks a,
+.boxcontact a {
+  text-decoration: none;
+  color: #fff;
+}
+.boxlinks a:hover,
+.boxcontact a:hover:not(.ws) {
+  color: #d79521;
+  text-decoration: underline;
+  transition: all 0.5s ease-in;
+}
 #map {
   height: 10.5rem;
   width: 1000%;
   margin-left: 2rem;
+}
+.anpc {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 3rem 0 3rem;
+}
+.copyright {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.copyright p:first-child {
+  padding-bottom: 2rem;
+}
+.logopersonal {
+  height: 5rem;
+  width: 7rem;
 }
 /* CONTACT SECTION */
