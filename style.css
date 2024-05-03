@@ -520,10 +520,10 @@ body {
 }
 .testimonialclient {
   padding: 0 12rem;
-  width: auto;
   padding-bottom: 1.5rem;
   color: #031829;
   font-family: "Courgette", cursive;
+  font-size: 1.2rem;
 }
 .numeclient {
   color: #031829;
@@ -531,7 +531,7 @@ body {
 }
 .carousel-control-prev,
 .carousel-control-next {
-  margin-top: 6rem;
+  margin-top: 4.6rem;
   height: 4rem;
 }
 
