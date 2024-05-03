@@ -16,7 +16,7 @@ body {
   letter-spacing: 1px;
 }
 .navbar.navbar-expand-lg {
-  padding: 0 11rem;
+  padding: 0 5rem;
   position: fixed;
   width: 100%;
   background-color: #020c15;
@@ -143,6 +143,7 @@ body {
   height: 100vh;
   background-color: #fff;
 }
+
 .belowherobox {
   display: inline-flex;
   flex-direction: row;
@@ -154,7 +155,14 @@ body {
   transform: translate(-50%, -50%);
   background-color: #342d27;
   border-radius: 1rem;
+  opacity: 0;
+  transition: opacity 1s ease-in;
 }
+
+.in-view {
+  opacity: 1;
+}
+
 .belowherotextbox {
   display: flex;
   flex-direction: column;
@@ -163,22 +171,26 @@ body {
   padding: 0 4rem;
   color: white;
 }
+
 .belowherotextbox > h1 {
   text-transform: uppercase;
   padding-bottom: 1rem;
   font-family: "Abril Fatface", serif;
 }
+
 .belowherotextbox > p {
   text-align: start;
   padding-bottom: 1rem;
   font-family: "Cinzel", serif;
 }
+
 .belowheropicture {
   width: 17rem;
-  height: 22rem;
+  height: auto;
   border-top-left-radius: 1rem;
   border-bottom-left-radius: 1rem;
 }
+
 .animated-button {
   font-family: "Cinzel", serif;
   position: relative;
@@ -220,13 +232,55 @@ body {
 }
 
 .animated-button:active {
-  scale: 0.95;
+  transform: scale(0.95);
 }
 
 .animated-button:hover .spananimatedbutton:last-child {
   width: 100%;
   height: 150px;
   opacity: 1;
+}
+
+@media (max-width: 1428px) {
+  .belowherobox {
+    width: 70%;
+    margin: 5rem auto;
+  }
+}
+
+@media (max-width: 899px) {
+  .belowherobox {
+    width: 80%;
+    margin: 3rem auto;
+  }
+
+  .belowherobox {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .belowherotextbox {
+    padding: 2rem;
+    align-items: center;
+  }
+
+  .belowheropicture {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+  }
+
+  .animated-button {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+}
+
+/* For screens smaller than 480px */
+@media (max-width: 480px) {
+  .belowherotextbox {
+    padding: 1rem;
+  }
 }
 
 /* BELOW HERO SECTION*/
@@ -250,23 +304,38 @@ body {
   font-family: "Rowdies", sans-serif;
   position: absolute;
   color: #fff;
-  left: 50%;
-  transform: translate(-50%, -50%);
   color: white;
 }
-.services > h6 {
+.serviciioferite {
+  left: 50%;
+  transform: translateX(-50%);
   top: 10%;
+  opacity: 0;
+  transition: opacity ease-in 1s;
 }
-.services > h3 {
+.in-view-1 {
+  opacity: 1;
+}
+.experimentati {
+  left: -100%;
+  transform: translateX(-50%);
   top: 25%;
+  transition: all 2s ease-in;
 }
-.services p {
+.to-right {
+  left: 50%;
+}
+.textservicii {
   top: 40%;
   color: #fff;
-  left: 50%;
+  left: 120%;
   position: absolute;
   transform: translate(-50%);
   text-align: center;
+  transition: all 2s ease-in;
+}
+.to-left {
+  left: 50%;
 }
 .servicesbox {
   display: flex;
@@ -287,6 +356,29 @@ body {
   align-items: center;
   padding: 2rem;
   border-radius: 0.4rem;
+  opacity: 0;
+}
+.servicesboxone:nth-child(1) {
+  transition: opacity 1.5s ease-in;
+}
+.servicesboxone:nth-child(2) {
+  transition: opacity 1.5s ease-in;
+}
+.servicesboxone:nth-child(3) {
+  transition: opacity 1.5s ease-in;
+}
+.servicesboxone:nth-child(4) {
+  transition: opacity 1.5s ease-in;
+}
+.servicesboxone:nth-child(5) {
+  transition: opacity 1.5s ease-in;
+}
+.servicesboxone:nth-child(6) {
+  transition: opacity 1.5s ease-in;
+}
+
+.in-view-2 {
+  opacity: 1;
 }
 .servicesboxone > h4 {
   color: white;
@@ -309,8 +401,12 @@ body {
 }
 .lottieplayer {
   position: relative;
-  left: 50%;
+  left: -100%;
   transform: translate(-50%);
+  transition: all 1s ease-in;
+}
+.to-right-1 {
+  left: 50%;
 }
 .section3dbox {
   display: flex;
@@ -321,10 +417,14 @@ body {
   background-color: #b4b2b248;
   width: 80%;
   position: relative;
-  left: 50%;
+  left: 200%;
   transform: translateX(-50%);
   padding: 2rem 0;
   border-radius: 1rem;
+  transition: all 1s ease-in;
+}
+.to-left-1 {
+  left: 50%;
 }
 .section3dbox > img {
   width: 17rem;
@@ -403,9 +503,15 @@ body {
 /* 3D SECTION */
 
 /* TESTIMONIALS SECTION */
+
 .testimonials {
   background-color: #b4b2b248;
   padding: 6rem 0;
+  opacity: 0;
+  transition: opacity 1s ease-in;
+}
+.in-view-3 {
+  opacity: 1;
 }
 .svgtestimonialone {
   width: 6rem;
@@ -428,6 +534,7 @@ body {
   margin-top: 6rem;
   height: 4rem;
 }
+
 /* TESTIMONIALS SECTION */
 
 /* CONTACT SECTION */

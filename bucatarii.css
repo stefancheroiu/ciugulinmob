@@ -6,7 +6,13 @@
 }
 .container {
   padding-bottom: 10rem;
+  opacity: 0;
+  transition: opacity 1s ease-in;
 }
+.container.in-view {
+  opacity: 1;
+}
+
 .slider-wrapper .slide-button {
   position: absolute;
   top: 50%;
@@ -45,13 +51,18 @@
   overflow-x: auto;
   scrollbar-width: none;
 }
+.slider-wrapper .image-list.treipoze {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .slider-wrapper .image-list::-webkit-scrollbar {
   display: none;
 }
 .slider-wrapper .image-list .image-item {
   width: 325px;
   height: 15rem;
-  object-fit: cover;
+  object-fit: contain;
 }
 .container .slider-scrollbar {
   height: 24px;

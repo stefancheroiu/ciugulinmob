@@ -1,3 +1,5 @@
+//SLIDER
+
 const initSlider = () => {
   const sliders = document.querySelectorAll(".container"); // Select all slider containers
 
@@ -82,3 +84,34 @@ const initSlider = () => {
 
 window.addEventListener("resize", initSlider);
 window.addEventListener("load", initSlider);
+
+//SLIDER
+
+//ANIMATIONS ON VIEWPORT
+
+function isInViewport(element) {
+  const rect = element.getBoundingClientRect();
+  return rect.top <= window.innerHeight / 1 && rect.bottom >= 0;
+}
+
+function addClassIfInView() {
+  const containers = document.querySelectorAll(".container");
+
+  containers.forEach((container) => {
+    if (isInViewport(container)) {
+      container.classList.add("in-view");
+    } else {
+      container.classList.remove("in-view");
+    }
+  });
+}
+
+window.addEventListener("scroll", function () {
+  addClassIfInView();
+});
+
+window.addEventListener("DOMContentLoaded", function () {
+  addClassIfInView();
+});
+
+//ANIMATIONS ON VIEWPORT
