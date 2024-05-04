@@ -17,7 +17,9 @@ function addClassIfInView() {
     title.classList.remove("in-view");
   }
 
-  const elements = document.querySelectorAll(".material-section, .type");
+  const elements = document.querySelectorAll(
+    ".material-section, .type, .egger, .accesorii"
+  );
 
   elements.forEach((element) => {
     if (isInViewport(element)) {

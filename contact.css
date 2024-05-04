@@ -18,6 +18,18 @@
   justify-content: start;
   width: 300px;
 }
+h6 {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: 1px;
+}
+.paragrafcontact {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
 /* THE FORM ITSELF */
 
 .contactform form {
@@ -66,6 +78,9 @@
   font-size: 17px;
   color: #9b9b9b;
   pointer-events: none;
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
 .form__field:focus {
@@ -115,6 +130,10 @@
   height: 2.8em;
   padding-right: 3.3em;
   cursor: pointer;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  letter-spacing: 1px;
 }
 
 .cssbuttons-io-button .icon {

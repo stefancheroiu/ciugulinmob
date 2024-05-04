@@ -12,11 +12,16 @@ body {
 }
 
 .titlematerials {
-  font-size: 3em;
+  font-size: 2rem;
   text-align: center;
   margin-bottom: 3rem;
   opacity: 0;
   transition: opacity 1.5s ease-in;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: 1px;
 }
 .in-view {
   opacity: 1;
@@ -29,24 +34,82 @@ body {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   width: 100%;
 }
-
+.material-section.mdf {
+  margin-top: 4rem;
+}
+.egger {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10rem;
+  padding: 7rem 0;
+}
+.eggerlogo {
+  display: flex;
+  flex: row;
+  align-items: start;
+  justify-content: center;
+  gap: 1rem;
+}
+.eggerlogo img {
+  width: 6rem;
+  height: 3rem;
+}
+figcaption {
+  font-size: 0.6rem;
+}
+.textbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.textbox p {
+  width: 35rem;
+}
+figure img {
+  width: 14rem;
+  height: 20rem;
+}
 h2 {
   text-align: center;
   padding-bottom: 2rem;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: 1px;
 }
 h3 {
   color: #666;
   padding-bottom: 0.5rem;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  letter-spacing: 1px;
 }
-
+.avantaje,
+.dezavantaje {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  letter-spacing: 1px;
+}
 p {
   line-height: 1.5;
   margin-bottom: 1.5rem;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
 ul {
   list-style-type: disc;
   margin-left: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 h2 + p {
   padding-bottom: 1rem;
@@ -67,6 +130,7 @@ h3 + p {
   justify-content: center;
   align-items: center;
   gap: 2rem;
+  margin-bottom: 8rem;
 }
 .type {
   display: flex;
@@ -74,8 +138,8 @@ h3 + p {
   justify-content: center;
   align-items: center;
   background-color: #fff;
-  margin-bottom: 4rem;
   padding: 2rem;
+  padding-bottom: 4rem;
   border-radius: 10px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
@@ -94,7 +158,52 @@ h3 + p {
   opacity: 0;
   animation: fadeIn 2s ease-in forwards;
 }
-
+.blum img {
+  width: 8rem;
+  height: 2rem;
+}
+.blum img,
+.hafele img {
+  transform: rotate(90deg);
+}
+.accesorii {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  padding: 3rem;
+}
+.accesorii > p {
+  text-align: center;
+}
+.titleaccesorii {
+  font-size: 2rem;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: 1px;
+}
+.accesoriirow {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 7rem;
+}
+.blum,
+.hafele {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.blum p::first-letter,
+.hafele p::first-letter {
+  font-size: 2rem;
+  font-style: italic;
+}
 @keyframes fadeIn {
   from {
     opacity: 0;

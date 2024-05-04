@@ -11,9 +11,14 @@ body {
 }
 .navbar-nav.text-center > a {
   color: white;
-  font-family: "Acme", sans-serif;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 4px;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.si {
+  text-transform: lowercase;
 }
 .navbar.navbar-expand-lg {
   padding: 0 5rem;
@@ -76,7 +81,10 @@ body {
 }
 .texthero {
   color: white;
-  font-family: "Lemon", serif;
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: italic;
   font-size: 4vh;
   text-align: center;
   backdrop-filter: blur(5px) saturate(100%);
@@ -100,11 +108,16 @@ body {
   padding: 10px 20px;
   display: inline-block;
   font-size: 15px;
-  font-weight: 600;
   width: 120px;
+  font-weight: 500;
+  color: #020c15;
   text-transform: uppercase;
   cursor: pointer;
   transform: skew(-21deg);
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  letter-spacing: 2px;
 }
 
 .spanservices {
@@ -119,7 +132,7 @@ body {
   bottom: 0;
   right: 100%;
   left: 0;
-  background: rgb(20, 20, 20);
+  background: #020c15;
   opacity: 0;
   z-index: -1;
   transition: all 0.5s;
@@ -175,13 +188,18 @@ body {
 .belowherotextbox > h1 {
   text-transform: uppercase;
   padding-bottom: 1rem;
-  font-family: "Abril Fatface", serif;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  letter-spacing: 1px;
 }
 
 .belowherotextbox > p {
   text-align: start;
   padding-bottom: 1rem;
-  font-family: "Cinzel", serif;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
 .belowheropicture {
@@ -192,7 +210,10 @@ body {
 }
 
 .animated-button {
-  font-family: "Cinzel", serif;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  letter-spacing: 2px;
   position: relative;
   display: inline-block;
   padding: 12px 24px;
@@ -312,6 +333,11 @@ body {
   top: 10%;
   opacity: 0;
   transition: opacity ease-in 1s;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  letter-spacing: 2px;
 }
 .in-view-1 {
   opacity: 1;
@@ -321,6 +347,11 @@ body {
   transform: translateX(-50%);
   top: 25%;
   transition: all 2s ease-in;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  letter-spacing: 2px;
 }
 .to-right {
   left: 50%;
@@ -333,6 +364,9 @@ body {
   transform: translate(-50%);
   text-align: center;
   transition: all 2s ease-in;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 .to-left {
   left: 50%;
@@ -352,11 +386,12 @@ body {
   display: flex;
   background-color: #031829;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  padding: 2rem;
+  padding: 3rem;
   border-radius: 0.4rem;
   opacity: 0;
+  gap: 2rem;
 }
 .servicesboxone:nth-child(1) {
   transition: opacity 1.5s ease-in;
@@ -382,14 +417,15 @@ body {
 }
 .servicesboxone > h4 {
   color: white;
-  padding: 2rem 1rem 0;
   font-family: "Amatic SC", sans-serif;
   font-size: 1.3rem;
 }
 .servicesonetext {
   color: white;
-  padding: 1rem 1rem 1rem;
-  font-family: "Philosopher", sans-serif;
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
 }
 
 /* SERVICES SECTION */
@@ -444,13 +480,19 @@ body {
   justify-content: center;
 }
 .textbox3d h4 {
-  font-family: "Concert One", sans-serif;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
   font-size: 5vh;
+  letter-spacing: 1px;
 }
 .textbox3d p {
   width: 15rem;
   text-align: start;
-  font-family: "Mate SC", serif;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 .btn {
   width: 140px;
@@ -472,6 +514,7 @@ body {
   letter-spacing: 1px;
   transition: top 0.5s;
   color: white;
+  letter-spacing: 2px;
 }
 
 .btn-text-one {
@@ -480,7 +523,9 @@ body {
   top: 50%;
   left: 0;
   transform: translateY(-50%);
-  font-family: "Mate SC", serif;
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
 .btn-text-two {
@@ -489,7 +534,9 @@ body {
   top: 150%;
   left: 0;
   transform: translateY(-50%);
-  font-family: "Mate SC", serif;
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
 .btn:hover .btn-text-one {
@@ -510,6 +557,16 @@ body {
   opacity: 0;
   transition: opacity 1s ease-in;
 }
+.testimonials > h1 {
+  text-align: center;
+  padding-bottom: 5rem;
+  color: #031829;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: 1px;
+}
 .in-view-3 {
   opacity: 1;
 }
@@ -522,16 +579,20 @@ body {
   padding: 0 12rem;
   padding-bottom: 1.5rem;
   color: #031829;
-  font-family: "Courgette", cursive;
-  font-size: 1.2rem;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 .numeclient {
   color: #031829;
-  font-family: "Kaushan Script", cursive;
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: italic;
 }
 .carousel-control-prev,
 .carousel-control-next {
-  margin-top: 4.6rem;
+  margin-top: 6rem;
   height: 4rem;
 }
 
@@ -573,6 +634,17 @@ body {
 .boxcontact a {
   text-decoration: none;
   color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.boxlinks h6,
+.boxcontact h6 {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  letter-spacing: 2px;
 }
 .boxlinks a:hover,
 .boxcontact a:hover:not(.ws) {
@@ -598,6 +670,10 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  letter-spacing: 2px;
 }
 .copyright p:first-child {
   padding-bottom: 2rem;
