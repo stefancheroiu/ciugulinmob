@@ -58,6 +58,10 @@ body {
 }
 figcaption {
   font-size: 0.6rem;
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: italic;
 }
 .textbox {
   display: flex;

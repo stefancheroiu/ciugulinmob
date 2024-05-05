@@ -20,8 +20,8 @@ body {
 .si {
   text-transform: lowercase;
 }
-.navbar.navbar-expand-lg {
-  padding: 0 5rem;
+.navbar.navbar-expand-xl {
+  padding: 0 7rem;
   position: fixed;
   width: 100%;
   background-color: #020c15;
@@ -32,7 +32,8 @@ body {
 }
 .logo {
   height: 5rem;
-  width: 8rem;
+  width: 5rem;
+  margin-left: 2rem;
 }
 .hamburger {
   cursor: pointer;
@@ -66,7 +67,11 @@ body {
   stroke-dasharray: 20 300;
   stroke-dashoffset: -32.42;
 }
-
+@media (max-width: 619px) {
+  .navbar.navbar-expand-xl {
+    padding: 0 1rem;
+  }
+}
 /* NAVIGATION */
 
 /* HERO SECTION */
@@ -479,12 +484,11 @@ body {
   align-items: start;
   justify-content: center;
 }
-.textbox3d h4 {
+.textbox3d h2 {
   font-family: "Oswald", sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
-  font-size: 5vh;
   letter-spacing: 1px;
 }
 .textbox3d p {
@@ -557,7 +561,7 @@ body {
   opacity: 0;
   transition: opacity 1s ease-in;
 }
-.testimonials > h1 {
+.testimonials > h2 {
   text-align: center;
   padding-bottom: 5rem;
   color: #031829;
@@ -582,6 +586,7 @@ body {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
+  font-size: 1.2rem;
 }
 .numeclient {
   color: #031829;
