@@ -348,6 +348,15 @@ body {
   .belowherobox {
     gap: 0;
   }
+  .belowherotextbox > h1,
+  .belowherotextbox > p {
+    margin-bottom: 0.2rem;
+  }
+}
+@media (max-width: 421px) {
+  .belowherotextbox > h1 {
+    font-size: 1rem;
+  }
 }
 
 /* BELOW HERO SECTION*/
