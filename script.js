@@ -55,7 +55,7 @@ function addClassIfInView() {
     textservicii.classList.remove("to-left");
   }
   servicii.forEach(function (servicii) {
-    if (isInViewport(experimentati)) {
+    if (isInViewport(servicii)) {
       servicii.classList.add("in-view-2");
     } else {
       servicii.classList.remove("in-view-2");

@@ -218,6 +218,7 @@ body {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
+  width: 100%;
 }
 
 .belowheropicture {
@@ -355,7 +356,18 @@ body {
 }
 @media (max-width: 421px) {
   .belowherotextbox > h1 {
-    font-size: 1rem;
+    font-size: 0.8rem;
+  }
+  .belowherotextbox > p {
+    font-size: 0.7rem;
+  }
+  .belowherobox {
+    gap: 2rem;
+  }
+}
+@media (max-width: 340px) {
+  .belowherobox {
+    gap: 0.5rem;
   }
 }
 
@@ -367,6 +379,7 @@ body {
   background-color: #fff;
   position: relative;
   height: 100vh;
+  margin: 5rem 0;
 }
 .services video {
   width: 100%;
@@ -407,6 +420,7 @@ body {
   font-weight: 600;
   font-style: normal;
   letter-spacing: 2px;
+  text-align: center;
 }
 .to-right {
   left: 50%;
@@ -427,10 +441,9 @@ body {
   left: 50%;
 }
 .servicesbox {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: start;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  grid-template-rows: auto;
   gap: 2rem;
   position: absolute;
   left: 50%;
@@ -443,7 +456,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 3rem;
+  padding: 2rem;
   border-radius: 0.4rem;
   opacity: 0;
   gap: 2rem;
@@ -481,6 +494,128 @@ body {
   font-optical-sizing: auto;
   font-weight: 600;
   font-style: normal;
+}
+
+@media (max-width: 1460px) {
+  .servicesonetext {
+    font-size: 0.7rem;
+  }
+  .experimentati {
+    font-size: 1.2rem;
+  }
+  .textservicii {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 1220px) {
+  .servicesbox {
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+  }
+  .section3d {
+    margin-top: 8rem;
+  }
+  .experimentati {
+    top: 18%;
+  }
+  .textservicii {
+    top: 27%;
+  }
+}
+@media (max-width: 1031px) {
+  .services video {
+    object-fit: contain;
+  }
+  .experimentati {
+    font-size: 0.9rem;
+  }
+  .servicesbox {
+    top: 32rem;
+  }
+  .experimentati {
+    top: 25%;
+  }
+  .textservicii {
+    top: 35%;
+  }
+  .serviciioferite {
+    top: 18%;
+  }
+  .section3d {
+    margin-top: 12rem;
+  }
+}
+@media (max-width: 700px) {
+  .servicesbox {
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+    top: 27rem;
+  }
+  .section3d {
+    margin-top: 17rem;
+  }
+  .experimentati {
+    top: 22%;
+    font-size: 0.7rem;
+  }
+  .textservicii {
+    top: 27%;
+    font-size: 0.7rem;
+  }
+}
+@media (max-width: 600px) {
+  .experimentati {
+    top: 25%;
+  }
+  .textservicii {
+    top: 30%;
+    width: 80%;
+  }
+  .serviciioferite {
+    top: 21%;
+  }
+}
+@media (max-width: 500px) {
+  .servicesboxone {
+    padding: 1rem;
+  }
+  .section3d {
+    margin-top: 13rem;
+  }
+  .experimentati {
+    top: 28%;
+  }
+  .textservicii {
+    top: 33%;
+  }
+  .serviciioferite {
+    top: 24%;
+  }
+}
+@media (max-width: 472px) {
+  .servicesbox {
+    top: 25rem;
+  }
+  .experimentati {
+    font-size: 0.6rem;
+  }
+  .textservicii {
+    font-size: 0.6rem;
+  }
+  .serviciioferite {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 400px) {
+  .experimentati {
+    top: 27%;
+  }
+  .textservicii {
+    top: 31%;
+  }
+  .servicesbox {
+    top: 23rem;
+  }
 }
 
 /* SERVICES SECTION */
