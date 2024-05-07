@@ -281,7 +281,7 @@ body {
 
 @media (max-width: 1462px) {
   .belowhero {
-    margin: 5rem 0;
+    margin-top: 5rem;
   }
 }
 @media (max-width: 1160px) {
@@ -379,7 +379,6 @@ body {
   background-color: #fff;
   position: relative;
   height: 100vh;
-  margin: 5rem 0;
 }
 .services video {
   width: 100%;
@@ -624,6 +623,7 @@ body {
 .section3d {
   padding-bottom: 10rem;
   background-color: #fff;
+  overflow: hidden;
 }
 .lottieplayer {
   position: relative;
@@ -792,6 +792,7 @@ body {
 .contact {
   background-color: #020c15;
   color: white;
+  overflow: hidden;
 }
 .logocontact {
   height: 11rem;
@@ -844,7 +845,7 @@ body {
 }
 #map {
   height: 10.5rem;
-  width: 1000%;
+  width: 25rem;
   margin-left: 2rem;
 }
 .anpc {
