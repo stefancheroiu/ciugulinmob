@@ -77,7 +77,6 @@ body {
 /* HERO SECTION */
 
 .hero {
-  overflow-x: hidden;
   height: 100vh;
   background-image: url(images/testbg1.jpg);
   background-size: cover;
@@ -624,6 +623,7 @@ body {
 
 /* 3D SECTION */
 .section3d {
+  height: 100vh;
   padding-bottom: 10rem;
   background-color: #fff;
   overflow-x: hidden;
