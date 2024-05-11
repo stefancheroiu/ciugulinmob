@@ -18,7 +18,7 @@
   justify-content: start;
   width: 300px;
 }
-h6 {
+.titlucontact {
   font-family: "Oswald", sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
@@ -40,6 +40,10 @@ h6 {
   border: 1px solid black;
   border-radius: 1rem;
   padding: 3rem;
+}
+.manatdesk {
+  width: 15rem;
+  height: 15rem;
 }
 .form__group {
   position: relative;
@@ -183,6 +187,50 @@ h6 {
 .ws img {
   width: 1rem;
   height: 1rem;
+}
+
+@media (max-width: 860px) {
+  .sendmessage {
+    gap: 5rem;
+  }
+}
+@media (max-width: 750px) {
+  .contactform form {
+    padding: 1rem;
+  }
+  .manatdesk {
+    width: 10rem;
+    height: 10rem;
+  }
+  .sendmessage {
+    gap: 3rem;
+  }
+}
+@media (max-width: 460px) {
+  .manatdesk {
+    width: 7rem;
+    height: 7rem;
+  }
+  .paragrafcontact {
+    font-size: 0.8rem;
+  }
+  .titlucontact {
+    font-size: 0.8rem;
+  }
+  .sendmessage {
+    gap: 1.5rem;
+  }
+}
+@media (max-width: 380px) {
+  .sendmessage form {
+    width: 7.2rem;
+  }
+  .paragrafcontact {
+    font-size: 0.6rem;
+  }
+  .titlucontact {
+    font-size: 0.6rem;
+  }
 }
 /* THE BUTTON ITSELF */
 
