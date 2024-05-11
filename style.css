@@ -72,6 +72,15 @@ html {
     padding: 0 1rem;
   }
 }
+@media (max-width: 650px) {
+  .navbar.navbar-expand-xl {
+    height: 4rem;
+  }
+  .logo {
+    height: 3rem;
+    width: 3rem;
+  }
+}
 /* NAVIGATION */
 
 /* HERO SECTION */
