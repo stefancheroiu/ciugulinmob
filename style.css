@@ -73,9 +73,6 @@ html {
   }
 }
 @media (max-width: 650px) {
-  .navbar.navbar-expand-xl {
-    height: 4rem;
-  }
   .logo {
     height: 3rem;
     width: 3rem;
@@ -789,6 +786,9 @@ html {
     width: 10rem;
     height: 10rem;
   }
+  .section3d {
+    margin-bottom: 17rem;
+  }
 }
 @media (max-width: 495px) {
   .section3dbox > img {
@@ -861,6 +861,37 @@ html {
   height: 4rem;
 }
 
+@media (max-width: 1030px) {
+  .carousel-control-prev,
+  .carousel-control-next {
+    margin-top: 8rem;
+  }
+}
+@media (max-width: 850px) {
+  .testimonialclient {
+    padding: 0 7rem;
+  }
+}
+@media (max-width: 720px) {
+  .carousel-control-prev,
+  .carousel-control-next {
+    margin-top: 9rem;
+  }
+}
+@media (max-width: 600px) {
+  .carousel-control-prev,
+  .carousel-control-next {
+    height: 2.5rem;
+    margin-top: 9rem;
+  }
+  .svgtestimonialone {
+    width: 4rem;
+    height: 4rem;
+  }
+  .testimonialclient {
+    padding: 0 4rem;
+  }
+}
 /* TESTIMONIALS SECTION */
 
 /* CONTACT SECTION */
@@ -874,12 +905,12 @@ html {
   margin-right: 4rem;
 }
 .contactbox {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: auto auto auto;
   align-items: start;
-  justify-content: start;
-  gap: 3rem;
-  padding: 3rem 2rem 0;
+  justify-content: center;
+  padding: 3rem 2rem 4rem 4rem;
 }
 .contactbox h6:hover {
   color: #d79521;
@@ -894,6 +925,12 @@ html {
   align-items: start;
   justify-content: center;
   line-height: 2.1rem;
+}
+.boxcontact {
+  padding-left: 9.5rem;
+}
+.boxlinks {
+  padding-left: 6rem;
 }
 .boxlinks a,
 .boxcontact a {
@@ -920,15 +957,10 @@ html {
 #map {
   height: 10.5rem;
   width: 25rem;
-  margin-left: 2rem;
-}
-.anpc {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  padding: 3rem 0 3rem;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 4rem;
 }
 .copyright {
   display: flex;
@@ -946,5 +978,94 @@ html {
 .logopersonal {
   height: 5rem;
   width: 7rem;
+}
+
+@media (max-width: 1258px) {
+  .boxcontact {
+    padding-left: 5.5rem;
+  }
+  .boxlinks {
+    padding-left: 2rem;
+  }
+}
+@media (max-width: 1200px) {
+  .contactbox {
+    padding: 3rem 2rem 4rem 4rem;
+  }
+}
+@media (max-width: 970px) {
+  .boxcontact {
+    padding-left: 3.5rem;
+  }
+  .boxlinks {
+    padding-left: 0;
+  }
+}
+@media (max-width: 880px) {
+  .boxlinks a,
+  .boxcontact a {
+    font-size: 0.7rem;
+  }
+}
+@media (max-width: 750px) {
+  .contactbox {
+    padding: 3rem 0.7rem 4rem 1rem;
+  }
+}
+@media (max-width: 660px) {
+  .logocontact {
+    height: 4.5rem;
+    width: 4.5rem;
+    margin-right: 2rem;
+  }
+  .boxcontact {
+    padding-left: 1.5rem;
+  }
+}
+@media (max-width: 600px) {
+  .contactbox {
+    grid-template-rows: auto auto auto;
+    grid-template-columns: auto;
+    align-items: center;
+    gap: 2rem;
+  }
+  .boxlinks,
+  .boxcontact {
+    align-items: center;
+  }
+  .boxcontact {
+    padding-left: 0;
+  }
+  .logocontact {
+    margin-right: 0;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 7rem;
+    width: 7rem;
+  }
+  #map {
+    width: 100%;
+  }
+}
+@media (max-width: 470px) {
+  .copyright {
+    font-size: 0.7rem;
+  }
+}
+@media (max-width: 410px) {
+  .logopersonal {
+    height: 4rem;
+    width: 5rem;
+  }
+}
+@media (max-width: 350px) {
+  .logopersonal {
+    height: 4rem;
+    width: 5rem;
+  }
+  .copyright {
+    font-size: 0.5rem;
+  }
 }
 /* CONTACT SECTION */
