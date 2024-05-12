@@ -25,61 +25,63 @@ initMap();
 //IN VIEWPORT ANIMATIONS
 
 function isInViewport(element) {
+  if (!element) return false;
   const rect = element.getBoundingClientRect();
   return rect.top <= window.innerHeight / 1 && rect.bottom >= 0;
 }
 
 function addClassIfInView() {
   var belowHeroBox = document.querySelector(".belowherobox");
-  if (isInViewport(belowHeroBox)) {
+  if (belowHeroBox && isInViewport(belowHeroBox)) {
     belowHeroBox.classList.add("in-view");
-  } else {
+  } else if (belowHeroBox) {
     belowHeroBox.classList.remove("in-view");
   }
 
   var serviciiOferite = document.querySelector(".serviciioferite");
-  if (isInViewport(serviciiOferite)) {
+  if (serviciiOferite && isInViewport(serviciiOferite)) {
     serviciiOferite.classList.add("in-view-1");
-  } else {
+  } else if (serviciiOferite) {
     serviciiOferite.classList.remove("in-view-1");
   }
 
   var experimentati = document.querySelector(".experimentati");
   var textservicii = document.querySelector(".textservicii");
-  var servicii = document.querySelectorAll(".servicesboxone");
-  if (isInViewport(experimentati)) {
+  if (experimentati && textservicii && isInViewport(experimentati)) {
     experimentati.classList.add("to-right");
     textservicii.classList.add("to-left");
-  } else {
+  } else if (experimentati && textservicii) {
     experimentati.classList.remove("to-right");
     textservicii.classList.remove("to-left");
   }
+
+  var servicii = document.querySelectorAll(".servicesboxone");
   servicii.forEach(function (servicii) {
-    if (isInViewport(servicii)) {
+    if (servicii && isInViewport(servicii)) {
       servicii.classList.add("in-view-2");
-    } else {
+    } else if (servicii) {
       servicii.classList.remove("in-view-2");
     }
   });
 
   var lottieplayer = document.querySelector(".lottieplayer");
-  if (isInViewport(lottieplayer)) {
+  if (lottieplayer && isInViewport(lottieplayer)) {
     lottieplayer.classList.add("to-right-1");
-  } else {
+  } else if (lottieplayer) {
     lottieplayer.classList.remove("to-right-1");
   }
 
   var section3dbox = document.querySelector(".section3dbox");
-  if (isInViewport(section3dbox)) {
+  if (section3dbox && isInViewport(section3dbox)) {
     section3dbox.classList.add("to-left-1");
-  } else {
+  } else if (section3dbox) {
     section3dbox.classList.remove("to-left-1");
   }
 
   var testimoniale = document.querySelector(".testimonials");
-  if (isInViewport(testimoniale)) {
+  if (testimoniale && isInViewport(testimoniale)) {
     testimoniale.classList.add("in-view-3");
-  } else {
+  } else if (testimoniale) {
     testimoniale.classList.remove("in-view-3");
   }
 }

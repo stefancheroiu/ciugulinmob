@@ -51,9 +51,32 @@ figcaption {
     gap: 1rem;
   }
 }
+@media (max-width: 506px) {
+  .container {
+    margin: 4rem 0;
+  }
+}
 @media (max-width: 346px) {
   .projectsarticle {
-    padding-bottom: 25rem;
-    padding-top: 8rem;
+    padding-bottom: 40rem;
+    padding-top: 13rem;
+  }
+}
+@media (max-height: 667px) {
+  .projectsarticle {
+    padding-top: 5rem;
+    padding-bottom: 7rem;
+  }
+}
+@media (max-height: 658px) {
+  .projectsarticle {
+    padding-top: 5rem;
+    padding-bottom: 35rem;
+  }
+}
+@media (max-height: 640px) {
+  .projectsarticle {
+    padding-top: 5rem;
+    padding-bottom: 8rem;
   }
 }

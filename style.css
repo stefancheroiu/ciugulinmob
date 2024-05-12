@@ -78,6 +78,17 @@ html {
     width: 3rem;
   }
 }
+@media (max-width: 359px) {
+  .container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+@media (max-width: 318px) {
+  .navbar.navbar-expand-xl {
+    gap: 1rem;
+  }
+}
 /* NAVIGATION */
 
 /* HERO SECTION */
@@ -370,6 +381,15 @@ html {
     gap: 2rem;
   }
 }
+@media (max-width: 360px) {
+  .belowheropicture {
+    height: 5rem;
+    width: 5rem;
+  }
+  .belowherobox {
+    height: 80%;
+  }
+}
 @media (max-width: 340px) {
   .belowherobox {
     gap: 0.5rem;
@@ -526,6 +546,49 @@ html {
     top: 27%;
   }
 }
+@media (max-height: 1216px) {
+  .servicesbox {
+    top: 45rem;
+  }
+}
+@media (max-height: 1160px) {
+  .servicesbox {
+    top: 42rem;
+  }
+}
+@media (max-height: 1080px) {
+  .servicesbox {
+    top: 40rem;
+  }
+}
+@media (max-height: 1000px) {
+  .servicesbox {
+    top: 37rem;
+  }
+}
+@media (max-height: 920px) {
+  .servicesbox {
+    top: 33rem;
+  }
+}
+@media (max-height: 840px) {
+  .servicesbox {
+    top: 30rem;
+  }
+  .section3d {
+    margin-top: 11rem;
+  }
+}
+@media (max-height: 696px) {
+  .servicesbox {
+    top: 27rem;
+  }
+}
+@media (max-height: 580px) {
+  .servicesbox {
+    top: 22rem;
+  }
+}
 @media (max-width: 1031px) {
   .services video {
     object-fit: contain;
@@ -565,6 +628,11 @@ html {
   .textservicii {
     top: 27%;
     font-size: 0.7rem;
+  }
+}
+@media (max-height: 695.2px) {
+  .section3d {
+    margin-top: 7rem;
   }
 }
 @media (max-width: 600px) {
@@ -892,6 +960,17 @@ html {
     padding: 0 4rem;
   }
 }
+@media (max-width: 460px) {
+  .testimonialclient {
+    padding: 0 3rem;
+    font-size: 0.8rem;
+  }
+  .carousel-control-prev,
+  .carousel-control-next {
+    height: 1.5rem;
+    margin-top: 5.5rem;
+  }
+}
 /* TESTIMONIALS SECTION */
 
 /* CONTACT SECTION */
@@ -1021,6 +1100,7 @@ html {
     gap: 4rem;
   }
 }
+
 @media (max-width: 660px) {
   .logocontact {
     height: 4.5rem;

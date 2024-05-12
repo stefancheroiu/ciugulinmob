@@ -93,6 +93,9 @@ h3 {
   font-style: normal;
   letter-spacing: 1px;
 }
+.tipmdf {
+  font-size: 1.1rem;
+}
 .avantaje,
 .dezavantaje {
   font-family: "Oswald", sans-serif;
@@ -116,11 +119,9 @@ ul {
   font-style: normal;
 }
 h2 + p {
-  padding-bottom: 1rem;
+  padding-bottom: 4rem;
 }
-ul + h3 {
-  padding-top: 1.5rem;
-}
+
 h3 + p {
   padding-bottom: 1.5rem;
 }
@@ -129,10 +130,9 @@ h3 + p {
   max-width: 40rem;
 }
 .mdftypes {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto;
   gap: 2rem;
   margin-bottom: 8rem;
 }
@@ -143,18 +143,19 @@ h3 + p {
   align-items: center;
   background-color: #fff;
   padding: 2rem;
-  padding-bottom: 4rem;
   border-radius: 10px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 .type p {
-  height: 17rem;
   text-align: center;
+  font-size: 0.8rem;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 .mdfimage {
-  height: 10rem;
-  width: 12rem;
+  height: 8rem;
+  width: 10rem;
   border-radius: 0.5rem;
   margin-bottom: 1rem;
 }
@@ -162,13 +163,12 @@ h3 + p {
   opacity: 0;
   animation: fadeIn 2s ease-in forwards;
 }
-.blum img {
-  width: 8rem;
-  height: 2rem;
-}
+
 .blum img,
 .hafele img {
   transform: rotate(90deg);
+  width: 8rem;
+  height: 2rem;
 }
 .accesorii {
   display: flex;
@@ -176,11 +176,12 @@ h3 + p {
   justify-content: center;
   align-items: center;
   gap: 5rem;
-  padding: 3rem;
+  padding: 3rem 0;
 }
 .accesorii > p {
   text-align: center;
 }
+
 .titleaccesorii {
   font-size: 2rem;
   font-family: "Oswald", sans-serif;
@@ -188,6 +189,7 @@ h3 + p {
   font-weight: 500;
   font-style: normal;
   letter-spacing: 1px;
+  text-align: center;
 }
 .accesoriirow {
   display: flex;
@@ -214,5 +216,181 @@ h3 + p {
   }
   to {
     opacity: 1;
+  }
+}
+
+@media (max-width: 1590px) {
+  .type {
+    padding: 1rem;
+  }
+}
+@media (max-width: 1390px) {
+  .materials {
+    padding: 5% 5%;
+    padding-top: 8rem;
+  }
+}
+
+@media (max-width: 1260px) {
+  .egger {
+    gap: 6rem;
+  }
+  .accesoriirow {
+    gap: 1rem;
+  }
+}
+@media (max-width: 1240px) {
+  .mdftypes {
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    align-items: start;
+  }
+}
+@media (max-width: 1140px) {
+  .accesoriirow {
+    flex-direction: column;
+  }
+  .blum p,
+  .hafele p {
+    text-align: start;
+  }
+  .egger {
+    gap: 3rem;
+  }
+  .tipuri {
+    font-size: 1.2rem;
+  }
+  .eggerlogo img {
+    width: 4rem;
+    height: 1.8rem;
+  }
+
+  .textpartener {
+    font-size: 0.8rem;
+  }
+  .tipuri.partener {
+    padding-bottom: 2rem;
+  }
+  .eggerimage img {
+    width: 10rem;
+    height: 15rem;
+  }
+}
+@media (max-width: 1010px) {
+  .textpartener {
+    width: 100%;
+  }
+  .textpartener p {
+    width: 100%;
+  }
+}
+@media (max-width: 900px) {
+  .material-section {
+    padding: 1rem;
+  }
+}
+@media (max-width: 800px) {
+  h2 + p {
+    font-size: 0.8rem;
+  }
+  .avantaje,
+  .dezavantaje {
+    font-size: 0.85rem;
+  }
+  .tipuri {
+    font-size: 1.2rem;
+  }
+  ul {
+    font-size: 0.8rem;
+  }
+  .materials {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .material-section {
+    padding: 0;
+    padding-top: 1rem;
+  }
+  .titleaccesorii {
+    font-size: 1.3rem;
+  }
+  .titleaccesorii + p {
+    font-size: 0.8rem;
+  }
+  .blum p,
+  .hafele p {
+    font-size: 0.8rem;
+  }
+  .accesorii {
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 660px) {
+  .mdftypes {
+    grid-template-columns: auto;
+  }
+}
+@media (max-width: 643px) {
+  .eggerlogo {
+    flex-direction: column;
+    align-items: center;
+  }
+  .eggerlogo img {
+    margin-bottom: 1rem;
+  }
+  .tipuri.partener {
+    padding-bottom: 0;
+  }
+}
+@media (max-width: 600px) {
+  .materials {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .titlematerials {
+    font-size: 1.3rem;
+  }
+  .avantaje,
+  .dezavantaje {
+    font-size: 0.7rem;
+  }
+  .tipuri {
+    font-size: 1rem;
+  }
+  ul {
+    font-size: 0.7rem;
+  }
+  h2 + p {
+    font-size: 0.7rem;
+  }
+}
+@media (max-width: 580px) {
+  .egger {
+    gap: 0;
+    flex-direction: column;
+  }
+  .textbox {
+    align-items: center;
+  }
+  .textpartener {
+    width: 90%;
+  }
+  .blum,
+  .hafele {
+    flex-direction: column;
+  }
+  .blum img,
+  .hafele img {
+    transform: rotate(0);
+  }
+  .accesorii {
+    gap: 3rem;
+  }
+}
+
+@media (max-width: 400px) {
+  ul {
+    margin-left: 0;
   }
 }
