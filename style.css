@@ -979,7 +979,11 @@ html {
   height: 5rem;
   width: 7rem;
 }
-
+@media (max-width: 1330px) {
+  .container-fluid {
+    gap: 7rem;
+  }
+}
 @media (max-width: 1258px) {
   .boxcontact {
     padding-left: 5.5rem;
@@ -1010,6 +1014,11 @@ html {
 @media (max-width: 750px) {
   .contactbox {
     padding: 3rem 0.7rem 4rem 1rem;
+  }
+}
+@media (max-width: 698px) {
+  .container-fluid {
+    gap: 4rem;
   }
 }
 @media (max-width: 660px) {
@@ -1057,6 +1066,11 @@ html {
   .logopersonal {
     height: 4rem;
     width: 5rem;
+  }
+}
+@media (max-width: 358px) {
+  .navbar.navbar-expand-xl {
+    padding: 0;
   }
 }
 @media (max-width: 350px) {

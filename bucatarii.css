@@ -4,7 +4,7 @@
 .slider-wrapper {
   position: relative;
 }
-.container {
+.container:not(:last-child) {
   padding-bottom: 10rem;
   opacity: 0;
   transition: opacity 1s ease-in;
@@ -60,7 +60,7 @@
   display: none;
 }
 .slider-wrapper .image-list .image-item {
-  width: 325px;
+  width: 17rem;
   height: 15rem;
   object-fit: contain;
 }
@@ -116,10 +116,15 @@
     scroll-snap-type: x mandatory;
   }
   .slider-wrapper .image-list .image-item {
-    width: 280px;
-    height: 380px;
+    width: 15rem;
+    height: 13rem;
   }
   .slider-scrollbar .scrollbar-thumb {
     width: 20%;
+  }
+}
+@media only screen and (max-width: 588px) {
+  .container {
+    overflow: hidden;
   }
 }
