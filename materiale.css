@@ -139,7 +139,7 @@ h3 + p {
 .type {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   background-color: #fff;
   padding: 2rem;
@@ -338,6 +338,8 @@ h3 + p {
   }
   .eggerlogo img {
     margin-bottom: 1rem;
+    width: 6rem;
+    height: 3rem;
   }
   .tipuri.partener {
     padding-bottom: 0;

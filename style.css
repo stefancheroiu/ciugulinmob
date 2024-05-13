@@ -635,6 +635,7 @@ html {
     margin-top: 7rem;
   }
 }
+
 @media (max-width: 600px) {
   .experimentati {
     top: 25%;
@@ -981,7 +982,6 @@ html {
 .logocontact {
   height: 7rem;
   width: 7rem;
-  margin-right: 4rem;
 }
 .contactbox {
   display: grid;
@@ -1058,11 +1058,22 @@ html {
   height: 5rem;
   width: 7rem;
 }
-@media (max-width: 1330px) {
-  .container-fluid {
-    gap: 7rem;
-  }
+.sociale {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 4rem;
+  gap: 1rem;
 }
+.fbinsta {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
 @media (max-width: 1258px) {
   .boxcontact {
     padding-left: 5.5rem;
@@ -1095,11 +1106,6 @@ html {
     padding: 3rem 0.7rem 4rem 1rem;
   }
 }
-@media (max-width: 698px) {
-  .container-fluid {
-    gap: 4rem;
-  }
-}
 
 @media (max-width: 660px) {
   .logocontact {
@@ -1117,6 +1123,9 @@ html {
     grid-template-columns: auto;
     align-items: center;
     gap: 2rem;
+  }
+  .sociale {
+    margin-right: 0;
   }
   .boxlinks,
   .boxcontact {
