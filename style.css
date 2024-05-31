@@ -650,7 +650,7 @@ html {
 }
 @media (max-width: 500px) {
   .servicesboxone {
-    padding: 1rem;
+    padding: 1.5rem;
   }
   .section3d {
     margin-top: 13rem;
