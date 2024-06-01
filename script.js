@@ -3,12 +3,12 @@
 let map;
 
 async function initMap() {
-  const position = { lat: -25.344, lng: 131.031 };
+  const position = { lat: 44.2666656, lng: 23.8999964 };
   const { Map } = await google.maps.importLibrary("maps");
   const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
 
   map = new Map(document.getElementById("map"), {
-    zoom: 4,
+    zoom: 10,
     center: position,
     mapId: "8e0a97af9386fef",
   });
